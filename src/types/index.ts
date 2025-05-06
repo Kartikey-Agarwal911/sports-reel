@@ -9,11 +9,10 @@ export interface Reel {
 
 export interface GenerateReelRequest {
   celebrityName: string;
-  duration?: number; // in seconds
 }
 
 export interface GenerateReelResponse {
   success: boolean;
-  reel?: Reel;
-  error?: string;
+  reel: Reel;
+  timestamp: string;
 } 
